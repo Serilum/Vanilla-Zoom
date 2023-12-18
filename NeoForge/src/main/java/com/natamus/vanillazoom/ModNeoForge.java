@@ -17,12 +17,11 @@ import net.neoforged.neoforge.common.NeoForge;
 @Mod(Reference.MOD_ID)
 public class ModNeoForge {
 	
-	public ModNeoForge() {
+	public ModNeoForge(IEventBus modEventBus) {
 		if (!FMLEnvironment.dist.equals(Dist.CLIENT)) {
 			return;
 		}
 
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		modEventBus.addListener(this::registerKeyBinding);
 		modEventBus.addListener(this::loadComplete);
