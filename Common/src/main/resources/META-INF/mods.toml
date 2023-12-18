@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="*"
 license="All rights reserved"
-issueTrackerURL="https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Vanilla%20Zoom"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Vanilla%20Zoom"
 logoFile="icon.png"
 
 [[mods]]
 modId="vanillazoom"
-version="2.2"
+version="2.3"
 displayName="Vanilla Zoom"
-displayURL="https://curseforge.com/minecraft/mc-mods/vanilla-zoom"
+displayURL="https://serilum.com/mod/vanilla-zoom"
 authors="Rick South"
 description='''Adds a vanilla-style zoom hotkey using the spyglass item, client-side.
 '''
@@ -21,13 +21,15 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
 
 [[dependencies.vanillazoom]]
     modId="collective"
+    type="required"
     mandatory=true
-    versionRange="[7.3,)"
+    versionRange="[7.21,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.vanillazoom]]
     modId="minecraft"
+    type="required"
     mandatory=true
     versionRange="[1.19.2]"
     ordering="NONE"
