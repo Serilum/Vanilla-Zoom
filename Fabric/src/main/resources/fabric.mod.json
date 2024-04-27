@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "vanillazoom",
+  "version": "2.4",
+
+  "name": "Vanilla Zoom",
+  "description": "Adds a vanilla-style zoom hotkey using the spyglass item, client-side.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/vanilla-zoom",
+    "sources": "https://github.com/Serilum/Vanilla-Zoom",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Vanilla%20Zoom"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.vanillazoom.ModFabric" ], "client": [ "com.natamus.vanillazoom.ModFabricClient" ]  },
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.20",
+    "java": ">=17",
+    "collective": ">=7.52"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://ricksouth.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " BirdieMiner",
+	  " Cherriesaurus",
+	  " Jack",
+	  " Jeremy Langford",
+	  " Michael W. S.",
+	  " pepe1191",
+	  " Shana Gitnick",
+	  " Tyler Behl"
+  ]
+}
