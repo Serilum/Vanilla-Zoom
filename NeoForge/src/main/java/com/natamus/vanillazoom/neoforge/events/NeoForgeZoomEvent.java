@@ -3,19 +3,15 @@ package com.natamus.vanillazoom.neoforge.events;
 import com.natamus.vanillazoom.events.ZoomEvent;
 import net.minecraft.world.InteractionResult;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.neoforge.event.TickEvent;
-import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class NeoForgeZoomEvent {
 	@SubscribeEvent
-	public static void onClientTick(TickEvent.ClientTickEvent e) {
-		if (!e.phase.equals(TickEvent.Phase.START)) {
-			return;
-		}
-
+	public static void onClientTick(ClientTickEvent.Pre e) {
 		ZoomEvent.onClientTick();
 	}
 
