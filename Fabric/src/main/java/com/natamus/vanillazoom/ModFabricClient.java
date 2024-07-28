@@ -3,6 +3,8 @@ package com.natamus.vanillazoom;
 import com.natamus.vanillazoom.events.ZoomEvent;
 import com.natamus.vanillazoom.util.Variables;
 import net.fabricmc.api.ClientModInitializer;
+import com.natamus.vanillazoom.util.Reference;
+import com.natamus.collective.check.ShouldLoadCheck;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
@@ -13,6 +15,10 @@ import net.minecraft.client.Minecraft;
 public class ModFabricClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		Variables.hotkey = KeyBindingHelper.registerKeyBinding(new KeyMapping("key.vanillazoom.togglezoom.desc", 342, "key.categories.misc"));
 
 		registerEvents();
