@@ -1,6 +1,7 @@
 package com.natamus.vanillazoom;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.vanillazoom.forge.events.ForgeZoomEvent;
 import com.natamus.vanillazoom.util.Reference;
 import com.natamus.vanillazoom.util.Variables;
@@ -19,6 +20,10 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 public class ModForge {
 	
 	public ModForge() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		if (!FMLEnvironment.dist.equals(Dist.CLIENT)) {
 			return;
 		}
