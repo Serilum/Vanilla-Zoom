@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "vanillazoom",
-  "version": "2.6",
+  "version": "2.7",
 
   "name": "Vanilla Zoom",
   "description": "Adds a vanilla-style zoom hotkey using the spyglass item, client-side.",
