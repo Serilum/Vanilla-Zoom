@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="vanillazoom"
-version="2.6"
+version="2.7"
 displayName="Vanilla Zoom"
 displayURL="https://serilum.com/mod/vanilla-zoom"
 authors="Rick South"

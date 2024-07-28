@@ -26,6 +26,10 @@ public class ZoomEvent {
 	private static ItemStack previousStack = null;
 
 	public static void onClientTick() {
+		if (Variables.hotkey == null) {
+			return;
+		}
+
 		Player player = mc.player;
 		if (player == null) {
 			return;
