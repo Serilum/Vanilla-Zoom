@@ -6,12 +6,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@EventBusSubscriber(Dist.CLIENT)
 public class ForgeZoomEvent {
 	@SubscribeEvent
-	public void onClientTick(TickEvent.ClientTickEvent e) {
+	public static void onClientTick(TickEvent.ClientTickEvent e) {
 		if (!e.phase.equals(TickEvent.Phase.START)) {
 			return;
 		}
@@ -20,14 +18,14 @@ public class ForgeZoomEvent {
 	}
 
 	@SubscribeEvent
-	public void onItemUse(PlayerInteractEvent.RightClickItem e) {
+	public static void onItemUse(PlayerInteractEvent.RightClickItem e) {
 		if (ZoomEvent.onItemUse(e.getEntity(), e.getLevel(), e.getHand()).equals(InteractionResult.FAIL)) {
 			e.setCanceled(true);
 		}
 	}
 
 	@SubscribeEvent
-	public void onEntityInteract(PlayerInteractEvent.EntityInteract e) {
+	public static void onEntityInteract(PlayerInteractEvent.EntityInteract e) {
 		if (ZoomEvent.onEntityInteract(e.getEntity(), e.getLevel(), e.getHand(), e.getTarget(), null).equals(InteractionResult.FAIL)) {
 			e.setCanceled(true);
 		}
