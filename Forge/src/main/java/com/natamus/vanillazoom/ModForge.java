@@ -46,7 +46,7 @@ public class ModForge {
     }
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(new ForgeZoomEvent());
+    	MinecraftForge.EVENT_BUS.register(ForgeZoomEvent.class);
 	}
 
 	private static void setGlobalConstants() {
