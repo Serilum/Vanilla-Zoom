@@ -27,18 +27,13 @@ public class ModNeoForge {
 		}
 
 
-		modEventBus.addListener(this::registerKeyBinding);
+		ModCommon.loadHotkeys();
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();
 		ModCommon.init();
 
 		RegisterMod.register(Reference.NAME, Reference.MOD_ID, Reference.VERSION, Reference.ACCEPTED_VERSIONS);
-	}
-
-	public void registerKeyBinding(final RegisterKeyMappingsEvent e) {
-		Variables.hotkey = new KeyMapping("key.vanillazoom.togglezoom.desc", 342, "key.categories.misc");
-		e.register(Variables.hotkey);
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
