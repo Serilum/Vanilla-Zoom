@@ -19,7 +19,7 @@ public class ModFabricClient implements ClientModInitializer {
 			return;
 		}
 
-		Variables.hotkey = KeyBindingHelper.registerKeyBinding(new KeyMapping("key.vanillazoom.togglezoom.desc", 342, "key.categories.misc"));
+		ModCommon.loadHotkeys();
 
 		registerEvents();
 	}
