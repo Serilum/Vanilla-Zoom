@@ -2,7 +2,6 @@ package com.natamus.vanillazoom.neoforge.events;
 
 import com.natamus.vanillazoom.events.ZoomEvent;
 import net.minecraft.world.InteractionResult;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
