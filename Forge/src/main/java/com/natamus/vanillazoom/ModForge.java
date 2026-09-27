@@ -36,7 +36,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	ForgeZoomEvent.registerEventsInBus();
+		ForgeZoomEvent.registerEventsInBus();
 	}
 
 	private static void setGlobalConstants() {
