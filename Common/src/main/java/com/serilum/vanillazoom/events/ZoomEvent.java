@@ -1,8 +1,8 @@
-package com.natamus.vanillazoom.events;
+package com.serilum.vanillazoom.events;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.natamus.collective.functions.KeyMappingFunctions;
-import com.natamus.vanillazoom.util.Variables;
+import com.serilum.vanillazoom.util.Variables;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
