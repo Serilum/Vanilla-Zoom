@@ -1,6 +1,6 @@
-package com.natamus.vanillazoom.forge.events;
+package com.serilum.vanillazoom.forge.events;
 
-import com.natamus.vanillazoom.events.ZoomEvent;
+import com.serilum.vanillazoom.events.ZoomEvent;
 import net.minecraft.world.InteractionResult;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
