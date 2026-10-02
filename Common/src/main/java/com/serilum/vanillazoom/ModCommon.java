@@ -1,8 +1,8 @@
-package com.natamus.vanillazoom;
+package com.serilum.vanillazoom;
 
 
 import com.natamus.collective.services.Services;
-import com.natamus.vanillazoom.util.Variables;
+import com.serilum.vanillazoom.util.Variables;
 import com.mojang.blaze3d.platform.InputConstants;
 
 public class ModCommon {

@@ -1,9 +1,9 @@
-package com.natamus.vanillazoom;
+package com.serilum.vanillazoom;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.vanillazoom.forge.events.ForgeZoomEvent;
-import com.natamus.vanillazoom.util.Reference;
+import com.serilum.vanillazoom.forge.events.ForgeZoomEvent;
+import com.serilum.vanillazoom.util.Reference;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
