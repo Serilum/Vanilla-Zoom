@@ -1,4 +1,4 @@
-package com.natamus.vanillazoom.util;
+package com.serilum.vanillazoom.util;
 
 import net.minecraft.client.KeyMapping;
 

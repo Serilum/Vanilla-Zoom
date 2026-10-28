@@ -1,8 +1,8 @@
-package com.natamus.vanillazoom;
+package com.serilum.vanillazoom;
 
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.vanillazoom.events.ZoomEvent;
-import com.natamus.vanillazoom.util.Reference;
+import com.serilum.vanillazoom.events.ZoomEvent;
+import com.serilum.vanillazoom.util.Reference;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;

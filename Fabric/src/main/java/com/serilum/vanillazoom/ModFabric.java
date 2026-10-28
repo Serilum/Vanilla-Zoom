@@ -1,8 +1,8 @@
-package com.natamus.vanillazoom;
+package com.serilum.vanillazoom;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.vanillazoom.util.Reference;
+import com.serilum.vanillazoom.util.Reference;
 import net.fabricmc.api.ModInitializer;
 
 public class ModFabric implements ModInitializer {

@@ -1,9 +1,9 @@
-package com.natamus.vanillazoom;
+package com.serilum.vanillazoom;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.vanillazoom.neoforge.events.NeoForgeZoomEvent;
-import com.natamus.vanillazoom.util.Reference;
+import com.serilum.vanillazoom.neoforge.events.NeoForgeZoomEvent;
+import com.serilum.vanillazoom.util.Reference;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;

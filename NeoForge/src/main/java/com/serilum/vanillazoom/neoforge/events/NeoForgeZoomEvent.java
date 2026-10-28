@@ -1,8 +1,7 @@
-package com.natamus.vanillazoom.neoforge.events;
+package com.serilum.vanillazoom.neoforge.events;
 
-import com.natamus.vanillazoom.events.ZoomEvent;
+import com.serilum.vanillazoom.events.ZoomEvent;
 import net.minecraft.world.InteractionResult;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
@@ -21,7 +20,7 @@ public class NeoForgeZoomEvent {
 	}
 
 	@SubscribeEvent
-	public static void onEntityInteract(PlayerInteractEvent.EntityInteractSpecific e) {
+	public static void onEntityInteract(PlayerInteractEvent.EntityInteract e) {
 		if (ZoomEvent.onEntityInteract(e.getEntity(), e.getLevel(), e.getHand(), e.getTarget(), null).equals(InteractionResult.FAIL)) {
 			e.setCanceled(true);
 		}
